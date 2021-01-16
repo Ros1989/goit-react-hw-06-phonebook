@@ -1,7 +1,16 @@
-import React from 'react';
+import ContactsForm from './ContactsForm';
+import ContactsList from './ContactsList';
+import SectionBlock from './Section';
+import ContactsFilter from './ContactsFilter';
 
-const App = () => {
-  return <div></div>;
-};
-
-export default App;
+export default function App() {
+  return (
+    <>
+      <SectionBlock title="Phonebook">
+        <ContactsForm />
+        <ContactsFilter />
+        <ContactsList />
+      </SectionBlock>
+    </>
+  );
+}
